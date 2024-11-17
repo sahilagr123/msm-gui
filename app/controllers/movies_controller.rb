@@ -17,6 +17,7 @@ class MoviesController < ApplicationController
 
     redirect_to("/movies/#{m.id}")
   end  
+  
   def create
     m = Movie.new
     m.title = params.fetch("the_title")
